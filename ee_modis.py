@@ -7,7 +7,7 @@ ee.Authenticate()
 #use your own project
 ee.Initialize(project='ee-ajaramillouclimate')
 
-# I'm interest in MODIS temperature data for the years 2000 - 2022
+# I'm interested in MODIS temperature data for the years 2000 - 2022
 
 collection_day = (ee.ImageCollection("MODIS/061/MOD11A2")
     .select(["LST_Day_1km", "QC_Day"])
