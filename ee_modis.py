@@ -5,7 +5,7 @@ import ee
 ee.Authenticate() 
 
 #use your own project
-ee.Initialize(project='ee-ajaramillouclimate')
+ee.Initialize(project='ee-user')
 
 # I'm interested in MODIS temperature data for the years 2000 - 2022
 
@@ -28,7 +28,7 @@ years = ee.List.sequence(2000, 2022)
 roi = ee.Geometry.Rectangle([-75.15, 6.73, -75.05, 6.81])
 
 
-# every year mean and export
+# every year average and export
 
 for year in years.getInfo():
     filtered = LSTDay.filter(ee.Filter.calendarRange(year, year, 'year'))
