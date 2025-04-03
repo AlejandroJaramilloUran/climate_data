@@ -1,4 +1,5 @@
-<h1> Download satellite images from Google Earth Engine using python </h1>
+<h1> Work with climate data </h1>
 
 <h2>Description</h2>
-This code shows how to use Python to obtain satellite images data from GGE using its API.
+- ee_modis: shows how to use Python to get satellite images data from GGE using its API.
+- SPEI_frequency: shows how to get information from a drought file in netCDF format 
